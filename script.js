@@ -17,7 +17,7 @@ fetch(point_url)
         // Not bothering with GeoJSON, just using my own style
         for (point of out) {
             L.circleMarker(point.coordinates, {
-                radius: point.radius,
+                radius: tweetsToRadius(point.tweets),
                 color: "blue"
             })
                 .addTo(mymap)

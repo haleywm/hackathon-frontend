@@ -1,7 +1,7 @@
 [
     {
         "coordinates": [-39.125, 146.387],
-        "tweets": 10,
+        "tweets": 20,
         "situation": "Earthquake",
         "avg_sentiment": -5.4,
         "avg_subjectivity": 0.6,
