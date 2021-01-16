@@ -18,7 +18,19 @@
             <div id="mapid"></div>
         </div>
         <div class="bottom-bar">
-            <p>Fire: </p>
+            <span>
+                <p>Filter:</p>
+                <select id="filter" onchange="updateFilter(this.value)">
+                    <option value="All">All</option>
+                    <option value="Fire">Fires</option>
+                    <option value="Flood">Floods</option>
+                    <option value="Earthquake">Earthquakes</option>
+                    <option value="Cyclone">Cyclones</option>
+                </select>
+            </span>
+            
+
+            <p>Fire: <img src="fire.png">, Flood: <img src="flood.png">, Earthquake: <img src="earthquake.png">, Cyclone: <img src="tornado.png"></p>
         </div>
         <script
             src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"

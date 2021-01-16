@@ -29,4 +29,28 @@ body {
 
 #mapid {
     flex: 1 1 auto;
+    z-index: 0;
+}
+
+.bottom-bar {
+    position: absolute;
+    left: 1vw;
+    bottom: 1vh;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 5;
+}
+
+.bottom-bar * {
+    margin: 4px;
+}
+
+p img {
+    display: inline;
+    height: 1em;
+    vertical-align: middle;
+}
+
+span {
+    display: inline-flex;
 }
