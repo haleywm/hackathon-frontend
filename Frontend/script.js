@@ -32,7 +32,7 @@ fetch(point_url)
             //circle.bindPopup("Testing")
             let icon = situationToImage(point.situation, radius)
             let marker = L.marker(point.coordinates, {icon: icon}).addTo(mymap)
-            marker.bindPopup(infoString(point.num_tweets, point.situation, point.avg_sentiment, point.avg_polarity))
+            marker.bindPopup(infoString(point.num_tweets, point.situation, point.avg_sentiment))
             layers_to_filter[point.situation].push(circle)
             layers_to_filter[point.situation].push(marker)
         }
@@ -160,10 +160,9 @@ function createCirc(x,y,sent,radius)
     return circle
 }
 //return string of info
-function infoString(tweets, situ, sent, pol)
+function infoString(tweets, situ, sent)
 {
     return "Tweets: " + tweets + "\n" +
     "<br>Situation: " + situ + "\n" +
-    "<br>Average Sentiment: " + sent + "\n" +
-    "<br>Average Polarity: " + pol + "\n" 
+    "<br>Average Sentiment: " + sent + "\n"
 }
